@@ -1,0 +1,180 @@
+/* 通用样式 */
+*{
+	margin: 0;
+	padding: 0;
+}
+.wd{
+	width: 1200px;
+	margin: 0 auto;
+}
+body {
+	font-size: 12px;
+}
+
+ul,ol,li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color:#D2E4FB;
+}
+
+
+img {
+	vertical-align: top;
+	border: none;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+/* 导航栏 */
+header{
+	width: 100%;
+	height:80px;
+	background: white;
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	overflow: hidden;
+}
+.nav{
+	overflow: hidden;
+	/* background: red; */
+}
+.nav>ul{
+	float: left;
+	margin-left: 650px;
+}
+.nav li{
+	float: left;
+	padding: 10px 0;
+	box-sizing: border-box;
+	font-size: 15px;
+	margin-top: 18px;
+	margin-right: 40px;
+}
+.nav li>a{
+	color: black;
+	font-size: 15px;
+}
+.nav li>a:hover{
+	color: blue;
+}
+.nav li:last-child>a{
+	color: red;
+}
+.current{
+	border-bottom: 1px solid white;
+}
+.logo{
+	float: left;
+	margin-top: 5px;
+	width: 100px;
+	height: 70px;
+	cursor: pointer;
+}
+/* 登录注册 */
+.container{
+	width: 100%;
+	margin-top: 80px;
+	background:#56C1F0;
+	height: 800px;
+	padding: 40px 0;
+	box-sizing: border-box;
+}
+.content{
+	background: white;
+	height: 720px;
+}
+/* 左边 */
+.content-left{
+	width: 790px;
+	border-right: 1px solid #E6EAEF;
+	text-align: center;
+	padding-top:120px ;
+	box-sizing: border-box;
+	float: left;
+}
+/* 右边 */
+.content-right{
+	width:408px;
+	height:720px;
+	float: left;
+	padding: 50px 70px;
+	box-sizing: border-box;
+}
+.content-right>h3{
+	font-size: 30px;
+	font-weight: normal;
+	margin-bottom: 15px;
+}
+.content-right>p{
+	margin-bottom: 20px;
+	font-size: 15px;
+}
+.text1,.password{
+	width: 100%;
+	height: 40px;
+	background: #F5F7FC;
+	outline: none;
+	border: 1px solid #D9DFE7;
+}
+.password{
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+.text2{
+	width: 50%;
+	height: 40px;
+	margin-bottom: 10px;
+	background: #F5F7FC;
+	outline: none;
+	border: 1px solid #D9DFE7;
+}
+.checkbox{
+	width: 20px;
+	height: 20px;
+	background: #F5F7FC;
+	vertical-align: middle;
+	margin-right: 3px;
+}
+.jizhu{
+	color: #BCC6D4;
+}
+.shuaxin{
+	margin-left: 40px;
+	cursor: pointer;
+}
+.submit{
+	width: 100%;
+	height: 45px;
+	background:#1B9EFC;
+	border-radius: 10px;
+	margin-top: 60px;
+	margin-bottom: 5px;
+}
+.togger a{
+	color: #1B9EFC;
+}
+.fenli{
+	margin: 20px;
+}
+.phone,.weixin{
+	width: 50%;
+	text-align: center;
+	margin-top: 30px;
+	height:100px ;
+}
+.phone p,.weixin p{
+	margin-top: 10px;
+	color: black;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="../css/shouye.css"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		  <!-- Link Swiper's CSS -->
+		<link rel="stylesheet" href="../css/swiper.min.css">
+		
+		<!-- Demo styles -->
+		<style>
+		  html, body {
+		    position: relative;
+		    height: 100%;
+		  }
+		  body {
+		    background: #eee;
+		    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+		    font-size: 14px;
+		    color:#000;
+		    margin: 0;
+		    padding: 0;
+		  }
+		  .content-left{
+			  position: relative;
+		  }
+		  .swiper-container {
+		    width: 100%;
+		    height: 260px;
+		  }
+		  .swiper-slide {
+		    text-align: center;
+		    font-size: 18px;
+		    background: #fff;
+		
+		    /* Center slide text vertically */
+		    display: -webkit-box;
+		    display: -ms-flexbox;
+		    display: -webkit-flex;
+		    display: flex;
+		    -webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		    -webkit-justify-content: center;
+		    justify-content: center;
+		    -webkit-box-align: center;
+		    -ms-flex-align: center;
+		    -webkit-align-items: center;
+		    align-items: center;
+		  }
+		</style>
+	</head>
+	<body>
+		<!-- 搜索框 -->
+		<div class="name">
+			<input type="text" name="" id="" value="" placeholder="请输入选手名称、编号" />
+		</div>
+		<!-- 广告滚动 -->
+		<marquee behavior="scroll" direction="left" scrollamount="5"  width="100%" height="30px">
+		<span class="laba">&#xe62d;</span>书法网络投票大赛，时间为。。。。。。
+		</marquee>
+		<!-- 音乐 -->
+		
+		<!-- 轮播图 -->
+		<!-- Swiper -->
+		<div class="swiper-container">
+		  <div class="swiper-wrapper">
+		    <div class="swiper-slide">Slide 1</div>
+		    <div class="swiper-slide">Slide 2</div>
+		    <div class="swiper-slide">Slide 3</div>
+		    <div class="swiper-slide">Slide 4</div>
+		    <div class="swiper-slide">Slide 5</div>
+		    <div class="swiper-slide">Slide 6</div>
+		    <div class="swiper-slide">Slide 7</div>
+		    <div class="swiper-slide">Slide 8</div>
+		    <div class="swiper-slide">Slide 9</div>
+		    <div class="swiper-slide">Slide 10</div>
+		  </div>
+		  <!-- Add Pagination -->
+		  <div class="swiper-pagination"></div>
+		  <!-- Add Arrows -->
+		 <!-- <div class="swiper-button-next"></div>
+		  <div class="swiper-button-prev"></div> -->
+		</div>
+		<!-- 模板块 -->
+		<div class="fangfa">
+			<a href="">立即抢购</a>
+		</div>
+		<!-- 参与选手 -->
+		<ul class="number">
+			<li>
+				<p>0</p>
+				<p>参与选手</p>
+			</li>
+			<li>
+				<p>0</p>
+				<p>累计票数</p>
+			</li>
+			<li>
+				<p>0</p>
+				<p>累计访问</p>
+			</li>
+		</ul>
+		<!-- 倒计时 -->
+	<!-- 	<input type="date" name="" id="" value="" class="stop"/>
+		<input type="date" name="" id="" value="" class="star"/> -->
+		<div class="time">
+			<span>&#xe633;</span><h4></h4>
+		</div>
+		<!-- 搜索框 -->
+		<div class="search">
+			<input type="text" name="" id="" value="" placeholder="请输入选手姓名或编号"/>
+			<span><i>&#xe6b4;</i>搜索</span>
+		</div>
+		<!-- 选手区域 -->
+		<ul class="xuanshou">
+			<li>
+				<p><span>编号</span><i>票数</i></p>
+				<a href="http://127.0.0.1:8848/%E6%8A%95%E7%A5%A8%E9%A1%B9%E7%9B%AE/app%E7%AB%AF%E7%BB%93%E6%9E%84/html/geren.html">
+					<img src="../../后台pc端结构/images/nature-1.jpg" width="100%" height="80%">
+				</a>
+			</li>
+			<li></li>
+			<li></li>
+		</ul>
+		<!-- 导航栏 -->
+		<ul class="navi">
+			<li>
+				<a href="" class="one">&#xe600;</a>
+				<p>首页</p>
+			</li>
+			<li>
+				<a href="" class="two">&#xe618;</a>
+				<p>说明</p>
+			</li>
+			<li>
+				<a href="" class="three">&#xe602;</a>
+				<p>搜索</p>
+			</li>
+			<li class="li">
+				<a href="http://127.0.0.1:8848/%E6%8A%95%E7%A5%A8%E9%A1%B9%E7%9B%AE/app%E7%AB%AF%E7%BB%93%E6%9E%84/html/paiming.html" class="four">&#xe686;</a>
+				<p>排名</p>
+			</li>
+			<li class="li">
+				<a href="" class="four">&#xe686;</a>
+				<p>奖品</p>
+			</li>
+		</ul>
+		<!-- Swiper JS -->
+		<script src="../js/zepto.min.js"></script>
+		<script src="../js/remstyle.js"></script>
+		<script src="../js/jquery-3.5.0.min.js"></script>
+		<script src="../js/index1.js"></script>
+		<script src="../js/swiper.min.js"></script>
+		
+		<!-- Initialize Swiper -->
+		<script>
+		  var swiper = new Swiper('.swiper-container', {
+		    spaceBetween: 30,
+		    centeredSlides: true,
+			loop:true,
+		    autoplay: {
+		      delay: 2500,
+		      disableOnInteraction: false,
+		    },
+		    pagination: {
+		      el: '.swiper-pagination',
+		      clickable: true,
+		    },
+		    navigation: {
+		      nextEl: '.swiper-button-next',
+		      prevEl: '.swiper-button-prev',
+		    },
+		  });
+		</script>
+	</body>
+</html>
